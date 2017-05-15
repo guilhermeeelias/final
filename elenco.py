@@ -4,6 +4,9 @@ elencolis = []
 def adicionar_elenco(cod_elenco,cod_ator,cod_filme,tipo):
     elenco = [cod_elenco,cod_ator,cod_filme,tipo]
     elencolis.append(elenco)
+    
+def listar_elencos():
+    return elencos
 
 
 def consultar_atores_por_filme(cod_elenco):
