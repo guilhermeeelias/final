@@ -24,7 +24,10 @@ def remover_sessao(cod_sessao):
             return True
     return False
 
-def remover_todos_ingressos()():
+
+def remover_todos_ingressos():
     global ingresso
     ingresso = []
 #VARIAVEÇ GLOBAL PARA LISTA DE INGRESSO= INGRESSO
+
+#iniciar_ingressos()
