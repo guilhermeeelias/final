@@ -17,15 +17,15 @@ def menu_adicionar():
     ator.adicionar_ator(cod_ator, nome, nacionalidade, idade)
 
 def menu_listar():
-    print ("\nListar ators \n")
+    print ("\nListar atores \n")
     atores = ator.listar_ators()
     for p in atores:
         imprimir_ator(p)
 
 
 def menu_buscar():
-    print ("\nBuscar ator por cod_ator \n")
-    cod_ator = int(input("cod_ator: "))
+    print ("\nBuscar ator por codigo do ator \n")
+    cod_ator = int(input("codigo do ator: "))
     p = ator.buscar_ator(cod_ator)
     if (p == None):
         print ("ator não encontrado")
@@ -34,7 +34,7 @@ def menu_buscar():
 
 def menu_remover():
     print ("\nRemover ator \n")
-    cod_ator = int(input("cod_ator: "))
+    cod_ator = int(input("codigo do ator: "))
     p = ator.remover_ator(cod_ator)
     if (p == False):
         print ("ator não encontrado")
@@ -47,7 +47,7 @@ def mostrar_menu():
     menu = ("\n----------------\n"+
              "(1) Adicionar novo ator \n" +
              "(2) Listar ator \n" +
-             "(3) Buscar ator por cod_ator \n" +
+             "(3) Buscar ator pelo código \n" +
              "(4) Remover ator \n" +
              "(0) Voltar\n"+
             "----------------")
