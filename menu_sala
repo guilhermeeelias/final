@@ -14,8 +14,8 @@ def menu_adicionar():
 
 def menu_listar():
     print ("\nListar salas \n")
-    salaes = sala.listar_salas()
-    for s in salaes:
+    salaLIS = sala.listar_salas()
+    for s in salaLIS:
         imprimir_sala(s)
 
 
