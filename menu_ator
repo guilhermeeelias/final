@@ -1,0 +1,66 @@
+from logica import ator
+
+
+def imprimir_ator(ator):
+    print ("Codigo do Ator: ",  ator[0])
+    print ("Nome: ", ator[1])
+    print ("Telefone: ",  ator[2])
+    print ()
+
+def menu_adicionar():
+    print ("\nAdicionar ator \n")
+    cod_ator = int(input("Codigo do ator: "))
+    nome = str (input("Nome: "))
+    telefone = int(input("Telefone: "))
+    ator.adicionar_ator(cod_ator, nome, telefone)
+
+def menu_listar():
+    print ("\nListar ators \n")
+    atores = ator.listar_ators()
+    for p in atores:
+        imprimir_ator(p)
+
+
+def menu_buscar():
+    print ("\nBuscar ator por cod_ator \n")
+    cod_ator = int(input("cod_ator: "))
+    p = ator.buscar_ator(cod_ator)
+    if (p == None):
+        print ("ator não encontrado")
+    else:
+        imprimir_ator(p)
+
+def menu_remover():
+    print ("\nRemover ator \n")
+    cod_ator = int(input("cod_ator: "))
+    p = ator.remover_ator(cod_ator)
+    if (p == False):
+        print ("ator não encontrado")
+    else:
+        print ("ator removido")
+
+
+def mostrar_menu():
+    run_ator = True
+    menu = ("\n----------------\n"+
+             "(1) Adicionar novo ator \n" +
+             "(2) Listar ator \n" +
+             "(3) Buscar ator por cod_ator \n" +
+             "(4) Remover ator \n" +
+             "(0) Voltar\n"+
+            "----------------")
+
+    while(run_ator):
+        print (menu)
+        op = int(input("Digite sua escolha: "))
+
+        if (op == 1):
+            menu_adicionar()
+        elif(op == 2):
+            menu_listar()
+        elif(op == 3):
+            menu_buscar()
+        elif (op == 4):
+            menu_remover()
+        elif (op == 0):
+            run_ator = False
