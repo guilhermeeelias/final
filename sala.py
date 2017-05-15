@@ -1,4 +1,4 @@
-finalsalasLIS = []
+salasLIS = []  
 
 
 def add_sala(cod_sala,lotacao):
