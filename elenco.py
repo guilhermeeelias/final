@@ -1,35 +1,35 @@
-elencolis = []
+elencos = []
 
 
-def adicionar_elenco(cod_elenco,cod_ator,cod_filme,tipo):
-    elenco = [cod_elenco,cod_ator,cod_filme,tipo]
-    elencolis.append(elenco)
+def adicionar_elenco(cod_elenco, nome):    
+    elenco = [cod_elenco, nome]
+    elencos.append(elenco)
     
 def listar_elencos():
     return elencos
 
-
-def consultar_atores_por_filme(cod_elenco):
-    for p in filme:
-        if (p[0] == cod_elenco):
-            return cod_elenco
+def buscar_elenco(cod_elenco):
+    for m in elencos:
+        if (m[0] == cod_elenco):
+            return m
     return None
 
+# def buscar elenco_por_filme(cod_filme)
+
+
+        
 def remover_elenco(cod_elenco):
-    for p in elencolis:
-        if (p[0] == cod_elenco):
-            elencolis.remove(p)
+    for m in elencos:
+        if (m[0] == cod_elenco):
+            elencos.remove(m)
             return True
     return False
-
-def buscar_elenco(cod_elenco):
-    for p in elencolis:
-        if (p[0] == cod_elenco):
-            return cod_elenco
-    return None
-
-def buscar_elenco_por_filme(cod_filme):
-    for p in elencolis:
-        if (p[0] == cod_filme):
-            return cod_filme
-    return None
+      
+def remover_todos_elencos():
+    global elencos
+    elencos =  [] 
+    
+def iniciar_elencos():
+    adicionar_elenco(2222, "Carlos")
+    adicionar_elenco(1111, "Maria")
+    
