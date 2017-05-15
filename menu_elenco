@@ -60,9 +60,10 @@ def mostrar_menu():
     menu = ("\n----------------\n"+
              "(1) Adicionar novo Elenco \n" +
              "(2) Listar elencos \n" +
-             "(3) Buscar elenco por Codigo do elenco \n" +
-             "(4) Remover elenco \n" +
-             "(5) Remover todos os Elencos \n" +
+             "(3) Buscar elenco pelo código do filme \n" +
+             "(4) Buscar elenco por Codigo do elenco \n" +
+             "(5) Remover elenco \n" +
+             "(6) Remover todos os Elencos \n" +
              "(0) Voltar\n"+
             "----------------")
 
@@ -75,18 +76,15 @@ def mostrar_menu():
         elif(op == 2):
             menu_listar()
         elif(op == 3):
+            menu_buscar_por_filme()
+        elif(op == 4):
             menu_buscar()
-        elif (op == 4):
-            menu_remover()
         elif (op == 5):
+            menu_remover()
+        elif (op == 6):
             menu_remover_elencos()
         elif (op == 0):
             run_medico = False
 
 if __name__ == "__main__":
     mostrar_menu()
-
-
-
-
-
