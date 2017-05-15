@@ -1,31 +1,21 @@
-filme = []
+filmes=[]
 
-
-def cadastrar_filme(cod_filme,titulo,duracao,classificacao,diretor,distribuidora,status,genero):
-    filmes = [cod_filme,titulo,duracao,classificacao,diretor,distribuidora,status,genero]
-    filme.append(filmes)
-
-def listar_filmes():
-    return filme
+def cadastrar_filme(cod_filme, titulo, duracao, classificacao, diretor, distribuidora,status,genero):
+    filme=[cod_filme, titulo, duracao, classificacao, diretor, distribuidora,status,genero]
+    filmes.append(filme)
 
 def buscar_filme(cod_filme):
-    for p in filme:
-        if (p[0] == cod_filme):
-            return cod_filme
-    return None
+    for p in filmes:
+        if (p[0] ==cod_ator):
+            return p
+        return None
 
-def remover_filme(cod_filme):
-    for p in filme:
-        if (p[0] == cod_filme):
-            filme.remove(p)
-            return True
-    return False
+def listar_filmes():
+    return filmes
 
-def remover_todos_atores():
-    global ator
-    ator = []
+def remover_todos_filmes():
+    global filmes
+    filmes=[]
 
-def iniciar_filme():
-    adicionar_filme(22222222222, "Rei leao","2 horas","Livre","Guilherme","Distribuidora","Disponivel","Infantil")
-
-
+def iniciar_filmes():
+    adicionar_filme(22222,'Pulp Fiction','2h30','livre','Tarantino','distribuidoraX','disponivel','+18')
