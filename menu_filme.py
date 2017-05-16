@@ -35,8 +35,9 @@ def menu_cadastrar():
     classificacao=str(input("Classificação do filme: "))
     diretor=str(input("Diretor do filme: "))
     status=str(input("Status do filme: "))
+    distribuidora=str(input("Distribuidora: "))
     genero=str(input("Genero do filme"))
-    filme.cadastrar_filme(cod_filme, titulo, duracao, classificacao, diretor, status, genero)
+    filme.cadastrar_filme(cod_filme, titulo, duracao, classificacao, diretor, status,distribuidora,genero)
 
 
 
