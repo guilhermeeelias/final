@@ -18,4 +18,4 @@ def remover_todos_filmes():
     filmes=[]
 
 def iniciar_filmes():
-    adicionar_filme(22222,'Pulp Fiction','2h30','livre','Tarantino','distribuidoraX','disponivel','+18')
+    cadastrar_filme(22222,'Pulp Fiction','2h30','livre','Tarantino','distribuidoraX','disponivel','terro')
