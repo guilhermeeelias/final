@@ -31,7 +31,7 @@ def menu_cadastrar():
     print("\nCadastrar filme\n")
     cod_filme=int(input("Codigo do filme: "))
     titulo=str(input("Titulo do filme: "))
-    duracao=int(input("Duração do filme: "))
+    duracao=str(input("Duração do filme: "))
     classificacao=str(input("Classificação do filme: "))
     diretor=str(input("Diretor do filme: "))
     status=str(input("Status do filme: "))
