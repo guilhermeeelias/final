@@ -6,7 +6,7 @@ def cadastrar_filme(cod_filme, titulo, duracao, classificacao, diretor, distribu
 
 def buscar_filme(cod_filme):
     for p in filmes:
-        if (p[0] ==cod_ator):
+        if (p[0] ==cod_filme):
             return p
         return None
 
