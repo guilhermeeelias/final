@@ -62,6 +62,8 @@ def mostrar_menu():
             menu_listar()
         elif(op==3):
             menu_cadastrar()
+        elif(op==0)
+            run_filme= False
 
 
 
