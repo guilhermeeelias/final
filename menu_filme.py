@@ -32,7 +32,7 @@ def menu_cadastrar():
     cod_filme=int(input("Codigo do filme: "))
     titulo=str(input("Titulo do filme: "))
     duracao=int(input("Duração do filme: "))
-    classificacao=str(input("Classificação do filme: ")
+    classificacao=str(input("Classificação do filme: "))
     diretor=str(input("Diretor do filme: "))
     status=str(input("Status do filme: "))
     genero=str(input("Genero do filme"))
@@ -55,11 +55,11 @@ def mostrar_menu():
         print(menu)
         op=int(input("Digite sua escolha: "))
 
-        if(op==1)
+        if(op==1):
             menu_buscar()
-        elif(op==2)
+        elif(op==2):
             menu_listar()
-        elif(op==3)
+        elif(op==3):
             menu_cadastrar()
 
 
