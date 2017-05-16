@@ -84,7 +84,4 @@ def mostrar_menu():
         elif (op == 6):
             menu_remover_elencos()
         elif (op == 0):
-            run_medico = False
-
-if __name__ == "__main__":
-    mostrar_menu()
+            run_elenco = False
