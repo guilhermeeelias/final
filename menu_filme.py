@@ -13,7 +13,7 @@ def imprimir_filme(filme):
 
 def menu_buscar():
     print("\nBuscar filme por codigo\n")
-    cod_filme = int(input("Codigo do ator: "))
+    cod_filme = int(input("Codigo do filme: "))
     f= filme.buscar_filme(cod_filme)
     if (f== None):
         print("Filme nao encontrado")
@@ -40,8 +40,11 @@ def menu_cadastrar():
     filme.cadastrar_filme(cod_filme, titulo, duracao, classificacao, diretor, status,distribuidora,genero)
 
 
+def remover_todos():
+    filme.remover_todos_filmes()
+    print("FILMES REMOVIDOS")
 
-#def remover_todos TBD
+
 
 def mostrar_menu():
     run_filme= True
@@ -49,7 +52,7 @@ def mostrar_menu():
              "(1) Buscar filme\n" +
              "(2) Listar filmes \n" +
              "(3) Cadastrar filme  \n" +
-             "(4)Remover todos \n" +
+             "(4) Remover todos \n" +
              "(0) Voltar\n"+
             "----------------")
     while (run_filme):
@@ -62,8 +65,9 @@ def mostrar_menu():
             menu_listar()
         elif(op==3):
             menu_cadastrar()
-        elif(op==0)
+        elif(op==4):
+            remover_todos()
+        elif(op==0):
             run_filme= False
-
 
 
