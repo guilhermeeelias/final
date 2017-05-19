@@ -6,7 +6,7 @@ def imprimir_elenco(elenco):
     print ("Código do filme", elenco[2])
     print ("Tipo: ", elenco[3])
 
-    print ()
+    print ("")
 
 def menu_adicionar():
     print ("\nAdicionar elenco \n")
@@ -17,7 +17,7 @@ def menu_adicionar():
     elenco.adicionar_elenco(cod_elenco, cod_ator, cod_filme, tipo)
 
 def menu_listar():
-    print ("\nListar medicos \n")
+    print ("\nLista Elencos \n")
     elencos = elenco.listar_elencos()
     for m in elencos:
         imprimir_elenco(m)
@@ -37,7 +37,7 @@ def menu_buscar_por_filme():
     cod_filme = int(input("Código do filme: "))
     m = elenco.buscar_elenco_por_filme(cod_filme)
     if (m == None):
-        print ("elenco não encontrado")
+        print ("Elenco não encontrado")
     else:
         imprimir_elenco(m)
 
@@ -50,8 +50,9 @@ def menu_remover():
     else:
         print ("Elenco removido")
 
-def menu_remover_todos():
-    elencos.remover_todos_elencos(elencos)
+def menu_remover_elencos():
+    elenco.remover_todos_elencos()
+    print("Elencos Removidos")
 
 
 
