@@ -6,7 +6,7 @@ def cadastrar_filme(cod_filme, titulo, duracao, classificacao, diretor, distribu
 
 def buscar_filme(cod_filme):
     for p in filmes:
-        if (p[0] ==cod_filme):
+        if (p[0] == cod_filme):
             return p
         return None
 
@@ -15,7 +15,9 @@ def listar_filmes():
 
 def remover_todos_filmes():
     global filmes
-    filmes=[]
+    filmes = []
+    return filmes
 
 def iniciar_filmes():
     cadastrar_filme(22222,'Pulp Fiction','2h30','livre','Tarantino','distribuidoraX','disponivel','terro')
+
