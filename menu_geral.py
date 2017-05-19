@@ -1,0 +1,57 @@
+from logica import ator
+from gui import  menu_ator
+
+from logica import filme
+from gui import menu_filme
+
+from logica import elenco
+from gui import  menu_elenco
+
+from logica import sessao
+from gui import menu_sessao
+
+
+def inicializar_dados():
+    ator.iniciar_atores()
+    elenco.iniciar_elencos()
+    filme.iniciar_filmes()
+    sessao.iniciar_ingressos()
+
+def mostrar_menu():
+    run_menu = True
+
+    inicializar_dados()
+
+
+    menu = ("\n--MENU DO CINEMA--\n"+
+             "(1) Menu Atores \n" +
+             "(2) Menu Elencos \n" +
+             "(3) Menu Filmes \n" +
+             "(4) Menu Salas \n" +
+             "(5) Menu Sessão \n" +
+             "(6) Menu Ingressos \n" +
+             "(0) Sair\n"+
+            "----------------")
+
+    while(run_menu):
+        print (menu)
+
+        op = int(input("Digite sua escolha: "))
+
+        if (op == 1):
+            menu_ator.mostrar_menu()
+        elif(op == 2):
+            menu_elenco.mostrar_menu()
+        elif(op == 3):
+            menu_filme.mostrar_menu()
+        elif(op == 4):
+            menu_elenco.mostrar_menu()
+        elif(op == 5):
+            menu_sessao.mostrar_menu()
+        elif(op == 6):
+            menu_filme.mostrar_menu()
+        elif (op == 0):
+            print ("Saindo do programa...")
+            run_menu = False
+        else:
+            print ("Valor invalido")
