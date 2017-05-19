@@ -20,4 +20,3 @@ def remover_todos_filmes():
 
 def iniciar_filmes():
     cadastrar_filme(22222,'Pulp Fiction','2h30','livre','Tarantino','distribuidoraX','disponivel','terro')
-
