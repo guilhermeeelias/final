@@ -14,7 +14,7 @@ def imprimir_filme(filme):
 def menu_buscar():
     print("\nBuscar filme por codigo\n")
     cod_filme = int(input("Codigo do filme: "))
-    f= filme.buscar_filme(cod_filme)
+    f = filme.buscar_filme(cod_filme)
     if (f== None):
         print("Filme nao encontrado")
     else:
@@ -69,5 +69,6 @@ def mostrar_menu():
             remover_todos()
         elif(op==0):
             run_filme= False
+
 
 
