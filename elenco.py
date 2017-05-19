@@ -32,6 +32,7 @@ def remover_elenco(cod_elenco):
 def remover_todos_elencos():
     global elencos
     elencos =  []
+    return elencos
 
 def iniciar_elencos():
     adicionar_elenco(2222, 3333, 4444, "Carlos")
