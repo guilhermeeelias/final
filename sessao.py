@@ -6,11 +6,11 @@ def criar_sessao(cod_sessao, cod_filme,cod_sala,horario):
 
 def buscar_sessao(cod_sessao):
     for s in sessoes:
-        if ~(s[0]== cod_sessao):
+        if (s[0]== cod_sessao):
             return s
     return None
 def verificar_lotacao():
-#tbd
+    pass
 def listar_sessoes():
     return sessoes
 
@@ -26,4 +26,6 @@ def remover_todas_as_sessoes():
     sessoes=[]
 
 def iniciar_ingressos():
-    #tbd
+    criar_sessao(22,34,54,"1h")
+    
+    
